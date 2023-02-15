@@ -1,13 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #000300;
+  font-family: "Open Sans", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* width */
+::-webkit-scrollbar {
+  height: 3px;
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff3131;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #ff3131;
+} */
+
+.select-custom ::selection {
+  background: #4cbb17;
+  color: white;
+}
+
+.select-custom-last ::selection {
+  background: red;
+  color: black;
+}
+
+.about-hero-last {
+  display: inline;
+  color: red;
+}
+
+/* .select-custom-about::selection {
+  background: red;
+  color: white;
+}
+*/
+.select-custom-about-title::selection {
+  background: white;
+  color: #5a5a5a;
+}
+
+.crazy {
+  position: relative;
+  left: 50%;
 }
